@@ -1,4 +1,4 @@
-class Pessoa{
+class Pessoa {
 
     constructor(
         private id: number,
@@ -8,13 +8,18 @@ class Pessoa{
         private data_nascimento: string,
         private email: string,
         private endereco: string,
-    ){ }
+    ) { }
 
-    excluir(){
+    excluir() {
         console.log(`Pessoa excluida: ${this.nome}`);
     }
 
-    getInfo(){
+    getNome() {
+        return this.nome;
+    }
+
+    getInfo() {
+        console.log('Dados da Pessoa')
         console.log(`Id: ${this.id}`);
         console.log(`Nome: ${this.nome}`);
         console.log(`Genero: ${this.genero}`);

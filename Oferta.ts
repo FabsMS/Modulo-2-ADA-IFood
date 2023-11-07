@@ -28,6 +28,7 @@ export default class Oferta {
     }
 
     getInfo() {
+        console.log('Dados da Oferta')
         console.log(`Código: ${this.codigo_oferta}`);
         console.log(`Curso: ${this.curso}`);
         console.log(`professor: ${this.professor}`);

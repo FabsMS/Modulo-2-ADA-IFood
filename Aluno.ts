@@ -21,8 +21,21 @@ class Aluno extends Pessoa {
         this.cursos_matriculados = [];
     }
 
-    matricular() {
+    excluir() {
+        console.log(`Aluno excluido, matricula: ${this.numero_matricula}`);
+    }
 
+    matricular(curso: Curso) {
+        this.cursos_matriculados.push(curso);
+    }
+
+    desistir() {
+        //falta implementar
+    }
+
+    verificarCursosMatriculados() {
+        console.log(`Aluno ${super.getNome()}, matricula: ${this.numero_matricula}`);
+        console.log(`Está matriculado nos cursos: ${this.cursos_matriculados}`);
     }
 
 }
