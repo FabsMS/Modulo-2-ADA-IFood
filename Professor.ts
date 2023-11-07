@@ -34,7 +34,7 @@ class Professor extends Pessoa {
     }
 
     getInfo() {
-        console.log('Dados do Professor')
+        console.log('Dados do Professor:')
         super.getInfo()
         console.log(`Numero de Registro: ${this.numero_registro}`);
         console.log(`Cursos: ${this.cursos}`);

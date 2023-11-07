@@ -19,7 +19,7 @@ class Pessoa {
     }
 
     getInfo() {
-        console.log('Dados da Pessoa')
+        console.log('Dados da Pessoa:')
         console.log(`Id: ${this.id}`);
         console.log(`Nome: ${this.nome}`);
         console.log(`Genero: ${this.genero}`);
