@@ -29,8 +29,14 @@ class Aluno extends Pessoa {
         this.cursos_matriculados.push(curso);
     }
 
-    desistir() {
-        //falta implementar
+    desistir(curso: Curso) {
+        const index = this.cursos_matriculados.findIndex(c => c === curso);
+        if (index > -1) {
+            this.cursos_matriculados.splice(index, 1);
+            console.log(`Aluno ${super.getNome()}, matricula: ${this.numero_matricula} desistiu do curso.`);
+        } else {
+            console.log(`Aluno ${super.getNome()}, matricula: ${this.numero_matricula} não está matriculado no curso`);
+        }
     }
 
     verificarCursosMatriculados() {
